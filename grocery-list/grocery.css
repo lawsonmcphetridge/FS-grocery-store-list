@@ -1,0 +1,32 @@
+
+main {
+    background-image: url(https://images.unsplash.com/photo-1604719312566-8912e9227c6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGdyb2Nlcnl8ZW58MHx8MHx8&w=1000&q=80);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.add-button {
+    width: 150px;
+    height: 70px;
+    border-radius: 10%;
+    border: 2px solid pink;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    transform: translate(0px, 5px);
+    background-color:red;
+}
+
+.title {
+    width: 100%;
+    height: 100px;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   flex-direction: column;
+   font-size: 100px;
+}

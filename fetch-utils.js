@@ -1,5 +1,5 @@
-const SUPABASE_URL = '';
-const SUPABASE_KEY = '';
+const SUPABASE_URL = 'https://qccwdgqhkuvusyzbcido.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFjY3dkZ3Foa3V2dXN5emJjaWRvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjA2MDcwNjcsImV4cCI6MTk3NjE4MzA2N30.DFfLtHUtrylbCXtdC__wIA1RZKo0p5Rk9ie6QztGjBM';
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -23,6 +23,14 @@ export function checkAuth() {
     // return the user so can be used in the page if needed
     return user;
 }
+
+
+
+
+
+
+
+
 
 export async function signUpUser(email, password) {
     return await client.auth.signUp({
