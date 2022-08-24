@@ -14,31 +14,89 @@ main {
 .add-button {
     width: 150px;
     height: 70px;
-    border-radius: 15%;
-    border: 2px solid black;
+    border-radius: 15px;
+    border: 3px solid black;
     cursor: pointer;
     font-size: 1.5rem;
-    
+    background-image: linear-gradient(
+  45deg,
+  hsl(183deg 100% 20%) 0%,
+  hsl(182deg 100% 23%) 11%,
+  hsl(181deg 100% 26%) 21%,
+  hsl(180deg 100% 29%) 31%,
+  hsl(179deg 100% 32%) 41%,
+  hsl(178deg 100% 36%) 51%,
+  hsl(176deg 100% 39%) 62%,
+  hsl(175deg 100% 43%) 73%,
+  hsl(174deg 100% 46%) 86%,
+  hsl(173deg 100% 50%) 100%
+);
+ transition: background-image 0.5s linear;
 }
 
 .delete-button {
      width: 150px;
     height: 70px;
-    border-radius: 15%;
-    border: 2px solid black;
+    border-radius: 15px;
+    border: 3px solid black;
     cursor: pointer;
     font-size: 1.5rem;
     margin-left: 10px;
+    background-image: linear-gradient(
+  45deg,
+  hsl(183deg 100% 20%) 0%,
+  hsl(182deg 100% 23%) 11%,
+  hsl(181deg 100% 26%) 21%,
+  hsl(180deg 100% 29%) 31%,
+  hsl(179deg 100% 32%) 41%,
+  hsl(178deg 100% 36%) 51%,
+  hsl(176deg 100% 39%) 62%,
+  hsl(175deg 100% 43%) 73%,
+  hsl(174deg 100% 46%) 86%,
+  hsl(173deg 100% 50%) 100%
+);
+     transition: background-image 0.5s linear;
+}
+
+
+.delete-button:hover {
+    transform: translate(0px, 5px);
+    background-image: linear-gradient(
+  45deg,
+  hsl(112deg 100% 20%) 0%,
+  hsl(129deg 78% 26%) 11%,
+  hsl(141deg 83% 29%) 21%,
+  hsl(149deg 91% 31%) 31%,
+  hsl(156deg 100% 33%) 41%,
+  hsl(160deg 100% 36%) 51%,
+  hsl(164deg 100% 40%) 62%,
+  hsl(167deg 100% 43%) 73%,
+  hsl(170deg 100% 47%) 86%,
+  hsl(173deg 100% 50%) 100%
+);
 }
 
 
 .add-button:hover {
     transform: translate(0px, 5px);
-    background-image: green;
+    background-image: linear-gradient(
+  45deg,
+  hsl(112deg 100% 20%) 0%,
+  hsl(129deg 78% 26%) 11%,
+  hsl(141deg 83% 29%) 21%,
+  hsl(149deg 91% 31%) 31%,
+  hsl(156deg 100% 33%) 41%,
+  hsl(160deg 100% 36%) 51%,
+  hsl(164deg 100% 40%) 62%,
+  hsl(167deg 100% 43%) 73%,
+  hsl(170deg 100% 47%) 86%,
+  hsl(173deg 100% 50%) 100%
+);
     
 }
 
 .title {
+    margin-top: 30px;
     width: 100%;
     height: 100px;
    display: flex;
@@ -85,7 +143,7 @@ main {
     width: 300px;
     height: 75px;
     font-size: 2rem;
-border: 1px solid black;
+    border: 1px solid black;
 }
 
 .add-button-div {
@@ -108,28 +166,16 @@ border: 1px solid black;
    justify-content: center;
    align-items: center;
    margin: auto;
-   background-image:url(https://spreadsheetpage.com/images/Notebook-Paper-US-Letter.png);
-   background-color: green;
+   background-image: url(https://st.depositphotos.com/2458127/4990/i/600/depositphotos_49903455-stock-photo-notebook-paper-background.jpg);
    opacity: 0.8;
    border: 4px solid black;
-   color: white;
-   border-radius: 15%;
-   font-size: 2rem;
-    text-shadow:
-        0.05em 0 black,
-        0 0.05em black,
-        -0.05em 0 black,
-        0 -0.05em black,
-        -0.05em -0.05em black,
-        -0.05em 0.05em black,
-        0.05em -0.05em black,
-        0.05em 0.05em black;
-        margin-bottom: 50px;
-       font-size: 30px;
-       box-sizing: border-box;
-       flex-direction: column;
-       flex-wrap: wrap;
-       max-height: 700px;
+   border-radius: 20px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 700px;
 }
 
 .grocery-class {
@@ -143,6 +189,15 @@ border: 1px solid black;
     justify-content: center;
     border-radius: 10px;
     border: 2px solid black;
+     text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
 }
 
 
@@ -163,11 +218,13 @@ header {
 
 
 .bought {
-    text-decoration: line-through;
+    text-decoration-line: line-through;
+    color: lightgray;
     margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-decoration-thickness: 0.1px;
 }
 
 
