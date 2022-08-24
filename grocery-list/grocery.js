@@ -1,4 +1,4 @@
-import { getAllGroceries, createList, updateGrocery } from '../fetch-utils.js';
+import { getAllGroceries, createList, updateGrocery, deleteAllGroceries, checkAuth } from '../fetch-utils.js';
 import { renderGroceryItems } from '../render-utils.js';
 
 
@@ -6,6 +6,16 @@ import { renderGroceryItems } from '../render-utils.js';
 
 const formEl = document.getElementById('input-form');
 const groceryEl = document.getElementById('current-items');
+const deleteButton = document.getElementById('delete-button');
+
+
+
+deleteButton.addEventListener('click', async () => {
+    const user = checkAuth();
+    await deleteAllGroceries(user.id);
+    await getAllGroceries();
+    await displayGroceries();
+});
 
 
 

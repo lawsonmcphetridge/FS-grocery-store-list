@@ -51,6 +51,11 @@ export async function updateGrocery(id) {
     return checkError(response);
 }
 
+export async function deleteAllGroceries(id) {
+    const response = await client.from('grocery').delete('*').match({ user_id: id });
+    return checkError(response);
+}
+
 
 
 
