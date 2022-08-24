@@ -35,15 +35,16 @@ async function displayGroceries() {
     for (let grocery of groceries) {
         const groceryList = renderGroceryItems(grocery);
         groceryEl.append(groceryList);
-
+        
         groceryList.addEventListener('click', async () => {
             await updateGrocery(grocery.id);
             displayGroceries();
         });
+       
         
     }
     
 }
 
-
+//put this on a window . add event and make display a await
 displayGroceries();
