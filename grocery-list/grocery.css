@@ -11,9 +11,10 @@ main {
 .add-button {
     width: 150px;
     height: 70px;
-    border-radius: 10%;
-    border: 2px solid pink;
+    border-radius: 15%;
+    border: 2px solid black;
     cursor: pointer;
+    
 }
 
 .add-button:hover {
@@ -29,4 +30,73 @@ main {
    justify-content: center;
    flex-direction: column;
    font-size: 100px;
+    text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
+        margin-bottom: 50px;
 }
+
+.input-form {
+       width: 100%;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+     text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
+        margin-bottom: 50px;
+       font-size: 40px;
+}
+
+
+.form-input {
+    width: 300px;
+    height: 75px;
+    font-size: 2rem;
+border: 1px solid black;
+}
+
+.add-button-div {
+     width: 100%;
+    height: 100px;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+   margin-top: 20px;
+   
+}
+
+.current-items {
+    width: 60%;
+    height: 700px;
+     display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   background-color: green;
+   opacity: 0.8;
+   border: 5px solid black;
+   color: black;
+   border-radius: 15%;
+   font-size: 2rem;
+}
+
+
+
+

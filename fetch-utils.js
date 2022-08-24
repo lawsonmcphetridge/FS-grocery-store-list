@@ -27,7 +27,17 @@ export function checkAuth() {
 
 
 
+export function redirectIfLoggedIn() {
+    const user = getUser();
+    if (user) {
+        location.replace('./grocery-list');
+    }
+}
 
+
+export async function createList(list) {
+    // instead of building it in here, you build it in app.js "grocery.js" in the form evernt listner
+}
 
 
 
