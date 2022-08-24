@@ -34,7 +34,7 @@ main {
 
 .add-button:hover {
     transform: translate(0px, 5px);
-    background-color: green;
+    background-image: green;
     
 }
 
@@ -108,6 +108,7 @@ border: 1px solid black;
    justify-content: center;
    align-items: center;
    margin: auto;
+   background-image:url(https://spreadsheetpage.com/images/Notebook-Paper-US-Letter.png);
    background-color: green;
    opacity: 0.8;
    border: 4px solid black;
@@ -135,7 +136,7 @@ border: 1px solid black;
     margin: 10px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.7gi);
     width: 120px;
     height: 110px;
     color: white;
