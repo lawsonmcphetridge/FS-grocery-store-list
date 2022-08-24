@@ -9,7 +9,7 @@ const errorDisplay = authForm.querySelector('.error');
 
 // check the query params for a redirect Url (page before auth redirect)
 const params = new URLSearchParams(location.search);
-const redirectUrl = params.get('redirectUrl') || '../';
+const redirectUrl = params.get('redirectUrl') || '../grocery-list';
 // If user directly navigated to /auth, but we have a user, go back
 // (they need to sign out first)
 const user = getUser();

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="./todos.css" />
+    <link rel="stylesheet" href="grocery.css">
+    <title>Document</title>
+</head>
+
+<main>
+    <header>
+        <div class="title">Grocery List</div>
+    </header>
+    
+    <br>
+    <br>
+    <div class="inputs">
+        <form id="input-form" class="input-form">
+            
+            What food?<input name="input-name" class="form-input">
+            <br>
+            How much?<input name="input-quantity" class="form-input">
+            
+            
+            
+            <div class="add-button-div">
+                <button class="add-button">Add to list</button>
+                <button class="delete-button" id="delete-button">Delete all groceries</button>
+            </div>
+            
+
+            
+        </form>
+    </div>
+    
+    <section class="current-items" id="current-items">
+        
+        
+    </section>
+    
+    <div class="background-image"></div>
+</main>
+
+<script type="module" src="./grocery.js"></script>
+</body>
+
+</html>
