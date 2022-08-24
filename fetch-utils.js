@@ -19,8 +19,6 @@ export function checkAuth() {
         // back to this page after they sign in...
         location.replace(`${authUrl}?redirectUrl=${encodeURIComponent(location)}`);
     }
-
-    // return the user so can be used in the page if needed
     return user;
 }
 
@@ -35,8 +33,22 @@ export function redirectIfLoggedIn() {
 }
 
 
-export async function createList(list) {
-    // instead of building it in here, you build it in app.js "grocery.js" in the form evernt listner
+
+export async function getAllGroceries() {
+    const response = await client.from('grocery').select('*').order('id');
+    return checkError(response);
+}
+
+
+export async function createList(grocery) {
+    const response = await client.from('grocery').insert(grocery).single();
+    return checkError(response);
+}
+
+
+export async function updateGrocery(id) {
+    const response = await client.from('grocery').update({ complete: true }).match({ id: id });
+    return checkError(response);
 }
 
 
@@ -58,6 +70,12 @@ export async function signInUser(email, password) {
 
 export async function signOutUser() {
     return await client.auth.signOut();
+}
+
+
+
+function checkError({ data, error }) {
+    return error ? console.error(error) : data;
 }
 
 /* Data functions */

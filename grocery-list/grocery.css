@@ -5,6 +5,9 @@ main {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -20,6 +23,7 @@ main {
 .add-button:hover {
     transform: translate(0px, 5px);
     background-color:red;
+    
 }
 
 .title {
@@ -40,6 +44,7 @@ main {
         0.05em -0.05em black,
         0.05em 0.05em black;
         margin-bottom: 50px;
+        
 }
 
 .input-form {
@@ -78,25 +83,74 @@ border: 1px solid black;
    text-align: center;
    justify-content: center;
    margin-top: 20px;
+   margin-bottom: 80px;
+   box-sizing: border-box;
    
 }
 
 .current-items {
     width: 60%;
-    height: 700px;
-     display: flex;
+    height: 1000px;
+    display: flex;
    text-align: center;
    justify-content: center;
    align-items: center;
    margin: auto;
    background-color: green;
    opacity: 0.8;
-   border: 5px solid black;
-   color: black;
+   border: 4px solid black;
+   color: white;
    border-radius: 15%;
    font-size: 2rem;
+    text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
+        margin-bottom: 50px;
+       font-size: 30px;
+       box-sizing: border-box;
+       flex-direction: column;
 }
 
+.grocery-class {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.5;
+    width: 120px;
+    height: 120px;
+    color: white;
+    justify-content: center;
+}
+
+.inputs {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+
+.bought {
+    text-decoration: line-through;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 
